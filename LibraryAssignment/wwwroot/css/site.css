@@ -1,0 +1,90 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+    margin-bottom: 60px;
+    background-image: linear-gradient(to left bottom, #58e7d4, #38d4b2, #1dc18f, #0bad6a, #0d9943);
+}
+
+
+
+
+
+.partialbox {
+    position: relative;
+    justify-content: space-evenly;
+    width: 1000px;
+}
+
+.card {
+    margin: 50px;
+    background: green;
+    box-shadow: 0px 10px 15px 
+}
+.list-group-item{
+    background: red;
+}
+/*Scroller and table-design in Customer and Book-table*/
+.input-group {
+    margin-bottom: 30px;
+}
+.btn {
+    height: 33%;
+    width:25%;
+    border-radius: 10px;  
+}
+
+.bookCoversScroller {
+    max-height: 800px;
+    overflow: auto;
+}
+
+.setScrollCustomers {
+    max-height: 400px;
+    overflow: auto;
+}
+.setScrollBooks {   
+    max-height: 800px;
+    overflow: auto;
+}
+.setScrollCustomerBookList {
+    max-height: 800px;
+    overflow: auto;
+}
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: linear-gradient(110.6deg, rgb(156, 116, 129) -18.3%, rgb(67, 54, 74) 16.4%, rgb(47, 48, 67) 68.2%, rgb(27, 23, 36) 99.1%);
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+/*----------------------------------------------*/

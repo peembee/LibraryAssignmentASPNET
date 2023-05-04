@@ -1,0 +1,48 @@
+﻿@model IEnumerable<LibraryAssignment.Models.Book>
+
+@{
+    ViewData["Title"] = "GetBooks";
+}
+
+<p>
+    <a asp-action="Create">Create New</a>
+</p>
+<form asp-action="Details">
+    <div class="input-group">
+      <div class="form-outline">
+          <label class="form-label" for="id">Search by Author/Titel or Book-ID</label>
+        <input type="search"name="id" id="id" class="form-control" required /> 
+        <button type="submit" class="btn btn-primary">GO</button>
+      </div>
+    </div>
+</form>
+
+
+<div class="bookCoversScroller">
+    @foreach (var item in Model) {
+        <div class="card" style="width: 18rem;">
+              <img src="/Img//old-books.jpg" class="card-img-top" alt="Picture of old books">
+
+              <div class="card-body">
+                <h5 class="card-title">
+                    @Html.DisplayFor(modelItem => item.Titel)
+                </h5>
+                <p class="card-text">
+                    @Html.DisplayFor(modelItem => item.Description)
+                </p>
+              </div>
+
+              <ul class="list-group list-group-flush">
+                <li class="list-group-item">Author: @Html.DisplayFor(modelItem => item.Author)</li>
+                <li class="list-group-item">ISBN: @Html.DisplayFor(modelItem => item.ISBN)</li>
+              </ul>
+
+              <div class="card-body">
+                <a asp-action="Edit" asp-route-id="@item.BookID">Edit</a> |
+                <a asp-action="Details" asp-route-id="@item.BookID">Details</a> |
+                <a asp-action="Delete" asp-route-id="@item.BookID">Delete</a>
+              </div>
+
+        </div>
+    }
+</div>

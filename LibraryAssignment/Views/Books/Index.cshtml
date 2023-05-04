@@ -1,0 +1,12 @@
+﻿@model IEnumerable<LibraryAssignment.Models.Book>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<div class="partialbox">
+    @{await Html.RenderPartialAsync("GetBooks", Model);}
+</div>
+
