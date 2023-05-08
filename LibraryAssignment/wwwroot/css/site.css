@@ -47,11 +47,11 @@ p{
     color: inherit;
 }
 
-.pageTitles{
+.pageTitles {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    border-bottom: solid 1px;   
-    text-align:center;
-    margin-bottom:80px;
+    border-bottom: solid 1px;
+    text-align: center;
+    margin-bottom: 80px;    
 }
 
 .btnLinks {
@@ -68,23 +68,47 @@ p{
     font-size: 30px;   
 }
 
+.tableBtnBox {
+    transition: all .2s ease-in-out;
+}
+.tableBtn {
+    color: wheat;
+    text-decoration: none;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    transition: 0.5s;
+}
+.tableBtn:hover {
+    transition: 0.5s;
+}
+
+.tableBtnBox:hover {
+    padding-right: 30px;
+    padding-top: 20px;
+    padding-bottom: 20px;   
+}
 
 
 
-    .partialbox {
-        position: relative;
-        justify-content: space-evenly;
-        width: 1000px;
-    }
 
 
-
+.partialbox {
+    position: relative;
+    justify-content: space-evenly;
+    width: 1000px;
+}
 
 .card {
     margin: 50px;
-    background: green;
-    box-shadow: 0px 10px 15px 
+    background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+    box-shadow: 0px 10px 15px;
+    transition: all .2s ease-in-out;
 }
+.card:hover {
+    margin-bottom: 200px;
+    transform: scale(1.2);
+    color: deepskyblue;
+}
+
 .list-group-item{
     background: red;
 }
@@ -99,13 +123,14 @@ p{
 }
 
 .bookCoversScroller {
-    max-height: 800px;
+    max-height: 1000px;
     overflow: auto;
 }
 
 .setScrollCustomers {
     max-height: 650px;
     overflow: auto;
+    background-color:black;
 }
 .setScrollBooks {   
     max-height: 800px;

@@ -52,10 +52,10 @@
                 <td>
                     @Html.DisplayFor(modelItem => item.Returned)
                 </td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@item.CustomerBookListID">Edit</a> |
-                    <a asp-action="Details" asp-route-id="@item.CustomerBookListID">Details</a> |
-                    <a asp-action="Delete" asp-route-id="@item.CustomerBookListID">Delete</a>
+                <td class="tableBtnBox">
+                    <a class="tableBtn"  asp-action="Edit" asp-route-id="@item.CustomerBookListID">Edit</a> |
+                    <a class="tableBtn"  asp-action="Details" asp-route-id="@item.CustomerBookListID">Details</a> |
+                    <a class="tableBtn"  asp-action="Delete" asp-route-id="@item.CustomerBookListID">Delete</a>
                 </td>
             </tr>
     }
