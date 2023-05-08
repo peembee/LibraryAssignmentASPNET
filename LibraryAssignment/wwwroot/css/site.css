@@ -22,15 +22,63 @@ body {
     background-image: linear-gradient(to left bottom, #58e7d4, #38d4b2, #1dc18f, #0bad6a, #0d9943);
 }
 
-
-
-
-
-.partialbox {
-    position: relative;
-    justify-content: space-evenly;
-    width: 1000px;
+p{
+    font-size: 25px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    color:azure;
 }
+
+
+
+
+
+.indexSection {
+    margin: 30px;
+    background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px 2px;
+    transition: all .2s ease-in-out;
+}
+.indexSection:hover {
+    transform: scale(1.1);       
+}
+.HomeIndexlinks{
+    text-decoration: none;
+    color: inherit;
+}
+
+.pageTitles{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    border-bottom: solid 1px;   
+    text-align:center;
+    margin-bottom:80px;
+}
+
+.btnLinks {
+    text-decoration: none;
+    color: inherit;
+    background: radial-gradient(circle at 10% 20%, rgb(69, 86, 102) 0%, rgb(34, 34, 34) 90%);
+    border-radius: 5px;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 2px 2px 2px black;
+    transition: all .2s ease-in-out;
+}
+.btnLinks:hover {
+    font-size: 30px;   
+}
+
+
+
+
+    .partialbox {
+        position: relative;
+        justify-content: space-evenly;
+        width: 1000px;
+    }
+
+
+
 
 .card {
     margin: 50px;
@@ -56,7 +104,7 @@ body {
 }
 
 .setScrollCustomers {
-    max-height: 400px;
+    max-height: 650px;
     overflow: auto;
 }
 .setScrollBooks {   

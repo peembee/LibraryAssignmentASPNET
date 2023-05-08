@@ -4,7 +4,10 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Visa alla böcker som en kund har lånat genom att fylla i en sök input här</h1>
+<h1 class="pageTitles">Booking H i s t o r y</h1>
+<p>
+    <a class="btnLinks" asp-action="Create">Create a New Booking For Customer</a>
+</p>
 <form asp-action="GetBooksViaCustomer">
     <div class="input-group">
       <div class="form-outline">

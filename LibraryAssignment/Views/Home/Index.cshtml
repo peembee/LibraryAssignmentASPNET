@@ -3,6 +3,30 @@
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-   
+    <h1 class="display-4 pageTitles">L i b r a r y</h1>
+    <a class="HomeIndexlinks" asp-controller="Customers" asp-action="Index">
+        <div class="indexSection">
+            <h2>Customers</h2>
+            <p>You can either search for a Customer via Name or Id<br />
+                Or create, edit, delete a Customer</p>
+        </div>
+   </a>
+
+   <a class="HomeIndexlinks" asp-controller="Books" asp-action="Index">
+        <div class="indexSection">
+            <h2>Books</h2>
+            <p>You can either search for a Book via Author, Titel or Id<br />
+                Or create, edit, delete a Book</p>
+        </div>
+    </a>
+
+    <a class="HomeIndexlinks" asp-controller="CustomerBookLists" asp-action="Index">
+        <div class="indexSection">
+            <h2>Booking-System</h2>
+            <p>Create a new Booking</p>
+            <p>Here you can see all the history of all the booked books.</p>
+            <p>You can aslo search in the history for each customer via Name or Id </p>
+        </div>
+    </a>
+
 </div>
