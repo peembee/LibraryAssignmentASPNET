@@ -126,8 +126,9 @@ namespace LibraryAssignment.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("CustomerBookListID,FK_CustomerID,FK_BookID,Retrieved,StartBookedDate,EndBookedDate,Returned")] CustomerBookList customerBookList)
+        public async Task<IActionResult> Create([Bind("CustomerBookListID,FK_CustomerID,FK_BookID,Retrieved,StartBookedDate,EndBookedDate")] CustomerBookList customerBookList)
         {
+            customerBookList.Returned = false;
             _context.CustomerBookLists.Add(customerBookList);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));

@@ -4,7 +4,7 @@
     ViewData["Title"] = "Index";
 }
 
-<h1 class="pageTitles">Booking H i s t o r y</h1>
+<h1 class="pageTitles">View B o o k i n g s</h1>
 <p>
     <a class="btnLinks" asp-action="Create">Create a New Booking For Customer</a>
 </p>
@@ -19,7 +19,7 @@
   
 </form>
 
-
 <div class="partialbox">
     @{await Html.RenderPartialAsync("BookedBooks", Model);}
 </div>
+<hr />
